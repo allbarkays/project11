@@ -41,6 +41,8 @@ ansible --version
 
 * The **build** failed a couple of times until I matched the ***Branches to build*** to the one in the repository which is main from master in the configuration settings as below:
 
+***Note: Trigger Jenkins project execution only for /main (master) branch.***
+
 
 ![branch-to-build.PNG](./images/branch-to-build.PNG)
 
@@ -62,6 +64,54 @@ ansible --version
 
 
 ![README.PNG](./images/README.PNG)
+
+
+
+**Now our architecture looks like:**
+
+
+![Current-architecture.PNG](./images/Current-architecture.PNG)
+
+
+## Step 2 – Prepare your development environment using Visual Studio Code
+
+1. Install VSCode
+
+2. Then connect to the newly created GitHub repository.
+
+3. Clone down your ***ansible-config-mgt*** repo to the Jenkins-Ansible instance
+`git clone https://github.com/allbarkays/ansible-config-mgt.git`
+
+
+
+
+remote: fatal error in commit_refs
+
+
+## Run first ansible test
+```
+ansible-playbook -i /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/inventory/dev.yml /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/playbooks/common.yml
+```
+
+
+In my case, I used:
+
+```
+ansible-playbook -i /var/lib/jenkins/jobs/ansible/builds/6/archive/inventory/dev.yml /var/lib/jenkins/jobs/ansible/builds/6/archive/playbooks/common.yml
+```
+
+At the end of this project we have implemented a solution that is shown below:
+
+
+
+
+
+
+
+
+
+
+
 
 
 
