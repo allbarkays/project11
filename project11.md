@@ -75,7 +75,11 @@ ansible --version
 
 ## Step 2 – Prepare your development environment using Visual Studio Code
 
+<<<<<<< HEAD
 1. Install VSCode which will be used to write and edit codes.
+=======
+1. Install VSCode
+>>>>>>> 19c112de8bf55609c04e443136c4c970d24aa1db
 
 2. Then connect to the newly created GitHub repository.
 
@@ -83,6 +87,7 @@ ansible --version
 `git clone https://github.com/allbarkays/ansible-config-mgt.git`
 
 
+<<<<<<< HEAD
 ### Ansible Configuration
 Clone ansible-config-mgt repo on local machine and create a new branch for development
 
@@ -278,6 +283,8 @@ At the end of this project we have implemented a solution that is shown below:
 
 
 
+=======
+>>>>>>> 19c112de8bf55609c04e443136c4c970d24aa1db
 
 
 
